@@ -6,7 +6,7 @@ import java.util.*;
 public class contacts {
 
     private static Scanner sc = new Scanner(System.in);
-    private static String directory = "manager";
+    private static String directory = "phonebook";
     private static String filename = "contacts.txt";
     private static final Path dataDirectory = Paths.get(directory);
     private static final Path dataFile = Paths.get(directory, filename);
