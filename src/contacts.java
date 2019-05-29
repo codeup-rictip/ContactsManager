@@ -3,6 +3,8 @@ import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.*;
 
+//Blah
+
 public class contacts {
 
     private static Scanner sc = new Scanner(System.in);
