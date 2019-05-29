@@ -34,6 +34,7 @@ public class contacts {
             deleteContact();
         } else if (choice == 5) {
             System.out.println("\nGoodbye");
+            persistContacts();
             System.exit(0);
         }
         showMenu();
