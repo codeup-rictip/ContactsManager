@@ -41,9 +41,12 @@ public class contacts {
     }
 
     public static void allContacts() {
-        System.out.println();
+        System.out.println("\n" +
+                "Name         |  Phone number\n" +
+                "~~~~~~~~~~~~~~~~~~~~~~~~");
         for (String contact : contacts) {
-            System.out.println(contact);
+            String[] contactInfo = contact.split("\\|");
+            System.out.println(String.join("  |  ",contactInfo));
         }
         System.out.println();
     }
@@ -59,7 +62,7 @@ public class contacts {
 
     public static void addContacts() {
 
-        System.out.println("Enter name and number (format: XXX-XXX-XXXX) of new contact: ");
+        System.out.println("Enter name and number (format: XXX-XXX-XXXX), separated by a |, of new contact: ");
         sc.nextLine();
 
         contacts.add(sc.nextLine());
